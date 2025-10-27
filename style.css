@@ -1,0 +1,261 @@
+/* ============================================
+   BASE TYPOGRAPHY
+   ============================================ */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+code {
+  font-size: 0.875rem !important;
+}
+
+/* ============================================
+   HEADING HIERARCHY
+   ============================================ */
+.markdown-section h1 {
+  font-size: 2.25rem; /* ~36px */
+  margin: 0 0 1rem;
+}
+
+.markdown-section h2 {
+  font-size: 1.875rem; /* ~30px */
+  margin: 45px 0 0.8rem;
+}
+
+.markdown-section h3 {
+  font-size: 1.625rem; /* ~26px */
+  margin: 40px 0 0.6rem;
+}
+
+.markdown-section h4 {
+  font-size: 1.375rem; /* ~22px */
+}
+
+.markdown-section h5 {
+  font-size: 1.125rem; /* ~18px */
+}
+
+.markdown-section h6 {
+  font-size: 1rem; /* 16px */
+  color: #777;
+}
+
+/* ============================================
+   CODE BLOCKS WITH WORD-WRAP
+   ============================================ */
+.markdown-section pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  position: relative;
+  padding: 1em;
+  line-height: 1.5;
+  background-color: #282c34;
+  border-radius: 4px;
+  margin: 1.2em 0;
+}
+
+.markdown-section pre > code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: visible;
+  display: block;
+  line-height: 1.5;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/* Inline code */
+.markdown-section code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  color: #e96900;
+}
+
+.markdown-section pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* ============================================
+   ADMONITIONS (Docusaurus Style)
+   ============================================ */
+
+/* Base styling untuk semua admonitions */
+.markdown-section p.tip,
+.markdown-section p.warn {
+  border-left: 4px solid;
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 1.5em 0;
+  background-color: transparent;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* TIPS (?>) - Cyan */
+.markdown-section p.tip {
+  background-color: rgba(0, 184, 212, 0.1);
+  border-left-color: #00b8d4;
+}
+
+.markdown-section p.tip code {
+  background-color: rgba(0, 184, 212, 0.15);
+}
+
+.markdown-section p.tip em {
+  color: #00838f;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* WARNING (!>) - Merah */
+.markdown-section p.warn {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-left-color: #f44336;
+}
+
+.markdown-section p.warn code {
+  background-color: rgba(244, 67, 54, 0.15);
+}
+
+.markdown-section p.warn em {
+  color: #c62828;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Custom Blockquote Admonitions */
+.markdown-section blockquote.note {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-left: 4px solid #2196f3;
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.markdown-section blockquote.note:before {
+  content: "ℹ️ NOTE";
+  color: #1976d2;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.markdown-section blockquote.warning {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-left: 4px solid #ff9800;
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.markdown-section blockquote.warning:before {
+  content: "⚠️ WARNING";
+  color: #f57c00;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.markdown-section blockquote.danger {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-left: 4px solid #f44336;
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.markdown-section blockquote.danger:before {
+  content: "🚨 DANGER";
+  color: #c62828;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.markdown-section blockquote.success {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-left: 4px solid #4caf50;
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.markdown-section blockquote.success:before {
+  content: "✅ SUCCESS";
+  color: #388e3c;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ============================================
+   LIGHT THEME ADJUSTMENTS
+   ============================================ */
+body:not([data-theme="dark"]) .markdown-section pre {
+  background-color: #f5f5f5;
+  color: #24292e;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .markdown-section h1 {
+    font-size: 2rem;
+  }
+
+  .markdown-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .markdown-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .markdown-section h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ============================================
+   COPY BUTTON STYLING
+   ============================================ */
+.docsify-copy-code-button {
+  background: #42b983 !important;
+  color: white !important;
+  font-size: 0.75rem !important;
+}
+
+.docsify-copy-code-button:hover {
+  background: #33a06f !important;
+}
+
+/* ============================================
+   SEARCH BOX STYLING
+   ============================================ */
+.search input {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.search input:focus {
+  border-color: #42b983;
+  outline: none;
+}
