@@ -246,6 +246,13 @@ body:not([data-theme="dark"]) .markdown-section pre {
 }
 
 /* ============================================
+   EMPHASIS (EM) STYLING
+   ============================================ */
+.markdown-section em {
+  color: #2980b9; /* Warna biru terang yang kontras dan mudah dibaca */
+}
+
+/* ============================================
    SEARCH BOX STYLING
    ============================================ */
 .search input {
