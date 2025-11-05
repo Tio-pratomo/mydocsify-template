@@ -74,6 +74,16 @@ body {
   color: #e96900;
 }
 
+/* Code inside headings should match heading font size */
+.markdown-section h1 code,
+.markdown-section h2 code,
+.markdown-section h3 code,
+.markdown-section h4 code,
+.markdown-section h5 code,
+.markdown-section h6 code {
+  font-size: 0.875em !important; /* Use relative size to match parent heading */
+}
+
 .markdown-section pre code {
   background: transparent;
   padding: 0;
