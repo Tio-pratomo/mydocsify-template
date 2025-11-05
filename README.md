@@ -4,6 +4,21 @@ Selamat datang di template proyek Docsify! Template ini dirancang untuk membantu
 
 Docsify adalah generator situs dokumentasi yang ringan dan mudah digunakan, tidak memerlukan _build configuration_ yang rumit. Cukup tulis dokumentasi Anda dalam Markdown, dan Docsify akan mengubahnya menjadi situs web yang indah.
 
+## Fitur yang Tersedia
+
+Template ini dilengkapi dengan berbagai fitur untuk meningkatkan pengalaman dokumentasi Anda:
+
+- **Tema Vue**: Menggunakan tema yang bersih dan profesional dari Docsify
+- **Table of Contents (TOC)**: Daftar isi otomatis untuk navigasi cepat
+- **Pencarian**: Fitur pencarian lengkap dengan teks dalam bahasa Indonesia
+- **Syntax Highlighting**: Penyorotan sintaks untuk berbagai bahasa pemrograman (Python, Java, JavaScript, PHP, Go, Bash, JSON, YAML, dan Markdown) menggunakan Shiki dengan tema Andromeeda
+- **Kode yang Dapat Disalin**: Tombol salin otomatis di setiap blok kode
+- **Zoom Gambar**: Fitur perbesar gambar saat diklik
+- **Flexible Alerts**: Dukungan untuk alert callout dalam berbagai format
+- **Shoelace Components**: Pustaka komponen web untuk UI yang lebih menarik
+- **Footer Otomatis**: Footer dengan tanggal tahun terkini dan kredit
+- **Favicon Kustom**: Mendukung berbagai format favicon (ICO, SVG, Apple Touch Icon)
+
 ## Cara Menggunakan Template Ini
 
 1.  **Kloning Repositori**: Dapatkan salinan template ini ke mesin lokal Anda.
