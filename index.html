@@ -22,9 +22,17 @@
       href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     />
 
+    <!-- Docsify TOC -->
+
     <link
       rel="stylesheet"
-      href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"
+      href="https://cdn.jsdelivr.net/npm/docsify-toc@1.0.0/dist/toc.css"
+    />
+
+    <!-- shoelace style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
     />
 
     <!-- Custom CSS -->
@@ -35,10 +43,11 @@
 
     <script>
       window.$docsify = {
-        name: "Ganti ini",
+        name: "Dokumentasi Lengkap",
         repo: "",
         loadSidebar: true,
         auto2top: true,
+        homepage: "home.md",
 
         search: {
           placeholder: "Cari...",
@@ -48,30 +57,10 @@
         toc: {
           scope: ".markdown-section",
           headings: "h1, h2",
-          title: "On this page",
+          title: "Pada halaman ini",
         },
         "flexible-alerts": {
-          style: "flat",
-          note: {
-            label: "📝 Note",
-            className: "note",
-          },
-          tip: {
-            label: "💡 Tip",
-            className: "tip",
-          },
-          warning: {
-            label: "⚠️ Warning",
-            className: "warning",
-          },
-          danger: {
-            label: "🚨 Danger",
-            className: "danger",
-          },
-          info: {
-            label: "ℹ️ Info",
-            className: "info",
-          },
+          style: "callout",
         },
         plugins: [
           function (hook, vm) {
@@ -79,7 +68,7 @@
               const footer = `
             <hr style="margin-top: 50px;">
             <footer style="text-align: center; padding: 20px; color: #666;">
-              <p>© ${new Date().getFullYear()} My notes</p>
+              <p>© ${new Date().getFullYear()} My Documentation</p>
               <p style="font-size: 0.9em;">Made with ❤️ using 
               <a href="https://docsify.js.org" target="_blank">Docsify</a></p>
             </footer>
@@ -94,26 +83,48 @@
     <!-- Docsify Core -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
+    <!-- Shoelace autoloader - loads all components and icons automatically -->
+    <script 
+      type="module" 
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js">
+    </script>
+
     <!-- Docsify Plugins -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-    <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-toc@1.0.0/dist/toc.js"></script>
 
     <!-- docsify-plugin-flexible-alerts -->
-    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1"></script>
 
-    <!-- Prism Syntax Highlighting -->
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-go.min.js"></script>
+    <!-- Docsify Shiki Plugin -->
+
+    <script type="module">
+      // Import tema dan bahasa dari esm.sh
+
+      import Andromeeda from "https://esm.sh/@shikijs/themes@1/andromeeda";
+      import bash from "https://esm.sh/@shikijs/langs@1/bash";
+      import python from "https://esm.sh/@shikijs/langs@1/python";
+      import java from "https://esm.sh/@shikijs/langs@1/java";
+      import json from "https://esm.sh/@shikijs/langs@1/json";
+      import markdown from "https://esm.sh/@shikijs/langs@1/markdown";
+      import yaml from "https://esm.sh/@shikijs/langs@1/yaml";
+      import php from "https://esm.sh/@shikijs/langs@1/php";
+      import go from "https://esm.sh/@shikijs/langs@1/go";
+      import typescript from "https://esm.sh/@shikijs/langs@1/typescript";
+
+      window.$docsify.shiki = {
+        themes: {
+          light: Andromeeda,
+        },
+        langs: [bash, python, java, json, markdown, yaml, php, go, typescript],
+      };
+    </script>
+
+    <script
+      type="module"
+      src="//cdn.jsdelivr.net/npm/docsify-shiki@v1"
+    ></script>
   </body>
 </html>
-
-<!-- docsify-plugin-flexible-alerts -->
-<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
