@@ -4,7 +4,7 @@
 body {
   font-size: 16px;
   line-height: 1.6;
-  color: #1d2b3a; /* Warna teks umum yang lebih terang untuk keterbacaan yang lebih baik */
+  color: #0f0e0e; /* Warna teks umum yang lebih terang untuk keterbacaan yang lebih baik */
 }
 
 /* ============================================
@@ -35,7 +35,15 @@ body {
 
 .markdown-section h6 {
   font-size: 1rem; /* 16px */
-  color: #777;
+}
+
+.markdown-section h1 span,
+.markdown-section h2 span,
+.markdown-section h3 span,
+.markdown-section h4 span,
+.markdown-section h5 span,
+.markdown-section h6 span {
+  color: #0f0e0e;
 }
 
 /* ============================================
@@ -240,6 +248,13 @@ body:not([data-theme="dark"]) .markdown-section pre {
    ============================================ */
 .markdown-section em {
   color: #0064a7; /* Warna biru terang yang kontras dan mudah dibaca */
+}
+
+/* ============================================
+   STRONG MARKDOWN STYLING
+   ============================================ */
+.markdown-section strong {
+  color: #005186; /* Warna biru terang yang kontras dan mudah dibaca */
 }
 
 /* ============================================
