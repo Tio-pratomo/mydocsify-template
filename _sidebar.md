@@ -1,2 +1,7 @@
 - [Home](/)
-- [About](/about.md)
+
+- **Getting Started**
+  - [About](/about.md)
+
+- **Guide**
+  - [Example Page](/example-page.md)
