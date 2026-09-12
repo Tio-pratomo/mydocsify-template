@@ -8,17 +8,16 @@ Bikin web dokumentasi **tanpa ribet**. Kamu cukup menulis file teks biasa (Markd
 
 ## ✨ Yang Kamu Dapat
 
-| Fitur | Artinya buat kamu |
-|-------|-------------------|
-| 🎨 Tampilan modern & rapi | Web dokumentasimu langsung bagus tanpa diatur-atur |
-| 🌙 Mode gelap otomatis | Ikut pengaturan HP/laptop pembaca (terang/gelap) |
-| 🔍 Kotak pencarian | Pembaca bisa mencari isi semua halaman (bahasa Indonesia) |
-| 📑 Sidebar lipat-buka | Daftar isi bisa dilipat per kelompok biar rapi |
-| 💻 Kode berwarna | Contoh kode Python, JS, PHP, dll tampil berwarna + ada tombol salin |
-| 📢 Kotak peringatan | Kotak info/tips/peringatan gaya GitHub, tinggal ketik |
-| 📁 Tree folder | Tampilkan struktur folder project dengan rapi |
-| 🔎 Klik gambar = zoom | Gambar bisa diklik untuk diperbesar |
-| 📱 Responsif | Enak dibaca di HP maupun laptop |
+| Fitur                     | Artinya buat kamu                                                   |
+| ------------------------- | ------------------------------------------------------------------- |
+| 🎨 Tampilan modern & rapi | Web dokumentasimu langsung bagus tanpa diatur-atur                  |
+| 🔍 Kotak pencarian        | Pembaca bisa mencari isi semua halaman (bahasa Indonesia)           |
+| 📑 Sidebar lipat-buka     | Daftar isi bisa dilipat per kelompok biar rapi                      |
+| 💻 Kode berwarna          | Contoh kode Python, JS, PHP, dll tampil berwarna + ada tombol salin |
+| 📢 Kotak peringatan       | Kotak info/tips/peringatan gaya GitHub, tinggal ketik               |
+| 📁 Tree folder            | Tampilkan struktur folder project dengan rapi                       |
+| 🔎 Klik gambar = zoom     | Gambar bisa diklik untuk diperbesar                                 |
+| 📱 Responsif              | Enak dibaca di HP maupun laptop                                     |
 
 ---
 
@@ -28,7 +27,7 @@ Kamu butuh 2 hal:
 
 1. **Browser** (Chrome / Edge / Firefox — apa saja boleh)
 2. **Cara menjalankan web lokal**, pilih salah satu:
-   - **Paling mudah:** extension **Live Server** di VS Code (klik kanan file `index.html` → *Open with Live Server*)
+   - **Paling mudah:** extension **Live Server** di VS Code (klik kanan file `index.html` → _Open with Live Server_)
    - **Atau:** install Docsify CLI sekali saja:
      ```bash
      npm i docsify-cli -g
@@ -124,10 +123,12 @@ Markdown itu cara menulis format (tebal, judul, list) pakai teks biasa. Ini yang
 
 ```markdown
 # Judul Besar
+
 ## Judul Sedang
+
 ### Judul Kecil
 
-**teks tebal** dan *teks miring*
+**teks tebal** dan _teks miring_
 
 - list biasa
 - item kedua
@@ -186,13 +187,7 @@ Kalau dokumentasimu perlu menunjukkan susunan file project, pakai ini:
 
 ```html
 <div class="foldertree" data-title="Struktur Project">
-- src/
-  - main.js
-  - components/
-    - Header.js
-    - Footer.js
-- package.json
-- README.md
+  - src/ - main.js - components/ - Header.js - Footer.js - package.json - README.md
 </div>
 ```
 
@@ -220,7 +215,7 @@ window.$docsify = {
 
 ```css
 :root {
-  --theme-color: #42b983;  /* <-- ganti warna sesukamu */
+  --theme-color: #42b983; /* <-- ganti warna sesukamu */
 }
 ```
 
@@ -230,16 +225,16 @@ Gunakan kode warna hex (contoh: `#007bff` biru, `#e74c3c` merah). Bisa ambil dar
 
 ## 🗂️ Isi Folder Template
 
-| File / Folder | Gunanya | Perlu diutak-atik? |
-|---------------|---------|--------------------|
-| `index.html` | Pengaturan situs (nama, plugin) | Jarang — hanya ganti nama |
-| `home.md` | Halaman pembuka situs | ✅ Ya, isi sesukamu |
-| `_sidebar.md` | Daftar menu sidebar | ✅ Ya, tiap tambah halaman |
-| `about.md` | Contoh halaman | Boleh dihapus/diganti |
-| `example-page.md` | Contoh semua fitur | Buat contekan, boleh dihapus |
-| `style.css` | Warna & tampilan | Kalau mau ganti warna |
-| `plugins/` | Plugin buatan template | Jangan diubah (kecuali paham) |
-| `.nojekyll` | Syarat GitHub Pages | Jangan dihapus |
+| File / Folder     | Gunanya                         | Perlu diutak-atik?            |
+| ----------------- | ------------------------------- | ----------------------------- |
+| `index.html`      | Pengaturan situs (nama, plugin) | Jarang — hanya ganti nama     |
+| `home.md`         | Halaman pembuka situs           | ✅ Ya, isi sesukamu           |
+| `_sidebar.md`     | Daftar menu sidebar             | ✅ Ya, tiap tambah halaman    |
+| `about.md`        | Contoh halaman                  | Boleh dihapus/diganti         |
+| `example-page.md` | Contoh semua fitur              | Buat contekan, boleh dihapus  |
+| `style.css`       | Warna & tampilan                | Kalau mau ganti warna         |
+| `plugins/`        | Plugin buatan template          | Jangan diubah (kecuali paham) |
+| `.nojekyll`       | Syarat GitHub Pages             | Jangan dihapus                |
 
 > Mau halaman pembuka yang berbeda? Ganti `homepage: "home.md"` di `index.html` dengan nama file lain, misalnya `homepage: "README.md"`.
 
@@ -249,7 +244,7 @@ Gunakan kode warna hex (contoh: `#007bff` biru, `#e74c3c` merah). Bisa ambil dar
 
 1. Upload folder ini ke repository GitHub (atau pakai tombol **Use this template** di halaman repo template)
 2. Di GitHub, buka **Settings → Pages**
-3. Pada *Source*, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
+3. Pada _Source_, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`. Save.
 4. Tunggu ±1 menit. Situsmu online di `https://username.github.io/nama-repo/` 🎉
 
 File `.nojekyll` di template ini memang disiapkan agar langkah di atas langsung jalan.
@@ -258,13 +253,13 @@ File `.nojekyll` di template ini memang disiapkan agar langkah di atas langsung 
 
 ## ❓ Kalau Ada Masalah
 
-| Gejala | Solusi |
-|--------|--------|
-| Halaman kosong saat file diklik dua kali | Wajib dibuka lewat Live Server / `docsify serve`, bukan klik dua kali |
-| Perubahan tidak muncul | Hard refresh: `Ctrl + Shift + R` (Windows) / `Cmd + Shift + R` (Mac) |
-| Halaman baru tidak muncul di sidebar | Pastikan sudah didaftarkan di `_sidebar.md` dan nama file persis sama |
-| Link sidebar error 404 | Cek ejaan nama file (huruf besar/kecil berpengaruh) |
-| Kode tidak berwarna | Pastikan nama bahasa setelah \`\`\` benar, mis. ` ```python ` bukan ` ```py ` |
+| Gejala                                   | Solusi                                                                        |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| Halaman kosong saat file diklik dua kali | Wajib dibuka lewat Live Server / `docsify serve`, bukan klik dua kali         |
+| Perubahan tidak muncul                   | Hard refresh: `Ctrl + Shift + R` (Windows) / `Cmd + Shift + R` (Mac)          |
+| Halaman baru tidak muncul di sidebar     | Pastikan sudah didaftarkan di `_sidebar.md` dan nama file persis sama         |
+| Link sidebar error 404                   | Cek ejaan nama file (huruf besar/kecil berpengaruh)                           |
+| Kode tidak berwarna                      | Pastikan nama bahasa setelah \`\`\` benar, mis. ` ```python ` bukan ` ```py ` |
 
 ---
 
